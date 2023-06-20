@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sekul Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/vendors/bootstrap/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css"
+    />
+    
+<link rel="stylesheet" href="assets/vendors/simple-datatables/style.css">
+
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <body class="light">
+    <div id="app">
+      <div id="sidebar-wrapper" class='sidebar'>
+    <div class="sidebar-header">
+        <div class="sidebar-logo text-center">Se<span class='text-blue-400'>kul</span></div>
+    </div>
+    <div class="sidebar-body">
+        <ul class="sidebar-menu">
+            
+            
+            <li class="sidebar-title">
+                <span>Main Menu</span>
+            </li>
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="index.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#house-door"/>
+                          </svg>
+                        <span>Dashboard</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#triangle"/>
+                          </svg>
+                        <span>Components</span>
+                    </a>
+                    
+                    <ul class="submenu ">
+                        
+                        <li class="submenu-item ">
+                            <a href="component-alert.html">Alert</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-badge.html">Badge</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-breadcrumb.html">Breadcrumb</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-buttons.html">Buttons</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-card.html">Card</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-carousel.html">Carousel</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-dropdowns.html">Dropdowns</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-list-group.html">List Group</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-modal.html">Modal</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-navs.html">Navs</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-pagination.html">Pagination</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-progress.html">Progress</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-spinners.html">Spinners</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-tooltips.html">Tooltips</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#briefcase"/>
+                          </svg>
+                        <span>Extra Components</span>
+                    </a>
+                    
+                    <ul class="submenu ">
+                        
+                        <li class="submenu-item ">
+                            <a href="component-extra-avatar.html">Avatar</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-extra-divider.html">Divider</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+            
+            <li class="sidebar-title">
+                <span>Apps</span>
+            </li>
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="apps-crud.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#card-heading"/>
+                          </svg>
+                        <span>CRUD Example</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="apps-chat.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#chat-dots-fill"/>
+                          </svg>
+                        <span>Chat App</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="apps-mail.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#envelope"/>
+                          </svg>
+                        <span>Email</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="apps-user-profile.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#person-badge"/>
+                          </svg>
+                        <span>User Profile</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#file-earmark-ruled"/>
+                          </svg>
+                        <span>Exam App</span>
+                    </a>
+                    
+                    <ul class="submenu ">
+                        
+                        <li class="submenu-item ">
+                            <a href="apps-exam-login.html">Student Login</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="apps-exam-working.html">Student Exam Working</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="apps-exam-admin-monitoring.html">Admin Monitoring</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+            
+            <li class="sidebar-title">
+                <span>Forms &amp; Tables</span>
+            </li>
+            
+            
+            
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#file-text"/>
+                          </svg>
+                        <span>Form Elements</span>
+                    </a>
+                    
+                    <ul class="submenu ">
+                        
+                        <li class="submenu-item ">
+                            <a href="form-element-input.html">Input</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="form-element-input-group.html">Input Group</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="form-element-select.html">Select</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="form-element-radio.html">Radio</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="form-element-checkbox.html">Checkbox</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="form-element-textarea.html">Textarea</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="form-layout.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#files"/>
+                          </svg>
+                        <span>Form Layout</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="form-editor.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#layers"/>
+                          </svg>
+                        <span>Form Editor</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="table.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#grid"/>
+                          </svg>
+                        <span>Table</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item active ">
+                    <a href="table-datatable.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#file-plus"/>
+                          </svg>
+                        <span>Datatable</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+            <li class="sidebar-title">
+                <span>Extra UI</span>
+            </li>
+            
+            
+            
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#exclude"/>
+                          </svg>
+                        <span>Widgets</span>
+                    </a>
+                    
+                    <ul class="submenu ">
+                        
+                        <li class="submenu-item ">
+                            <a href="ui-chatbox.html">Chatbox</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="ui-pricing.html">Pricing</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="ui-todolist.html">To-do List</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill"/>
+                          </svg>
+                        <span>Charts</span>
+                    </a>
+                    
+                    <ul class="submenu ">
+                        
+                        <li class="submenu-item ">
+                            <a href="ui-chart-chartjs.html">ChartJS</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="ui-chart-apexchart.html">Apexchart</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="ui-google-maps.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#globe"/>
+                          </svg>
+                        <span>Google Maps</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+            <li class="sidebar-title">
+                <span>Pages</span>
+            </li>
+            
+            
+            
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#person"/>
+                          </svg>
+                        <span>Authentication</span>
+                    </a>
+                    
+                    <ul class="submenu ">
+                        
+                        <li class="submenu-item ">
+                            <a href="auth-login.html">Login</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="auth-register.html">Register</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="auth-forgot-password.html">Forgot Password</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#x"/>
+                          </svg>
+                        <span>Errors</span>
+                    </a>
+                    
+                    <ul class="submenu ">
+                        
+                        <li class="submenu-item ">
+                            <a href="error-403.html">403</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="error-404.html">404</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="error-500.html">500</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#eye-slash-fill"/>
+                          </svg>
+                        <span>Disabled Menu</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#menu-button"/>
+                          </svg>
+                        <span>Menu Levels</span>
+                    </a>
+                    
+                    <ul class="submenu ">
+                        
+                        <li class="submenu-item ">
+                            <a href="#">Second Level</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="#">Second Level</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+            <div class="px-4 mt-4 mb-5">
+                <a href="http://" class='btn btn-outline-primary btn-block'>
+                    <svg class="bi" width="20" height="20" fill="currentColor">
+                        <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#file-earmark-medical"/>
+                      </svg>
+                    Documentation
+                </a>
+            </div>
+        </ul>
+    </div>
+</div>
+      <div id="main">
+        
+<div class="page-title">
+    <h3>Datatable</h3>
+    <nav class="breadcrumb-header" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Datatable</li>
+      </ol>
+    </nav>
+</div>
+<div class="row mt-3">
+    <div class="col-12">
+        <div class="card card-shadow">
+            <div class="card-header">
+                <h5 class="card-title">
+                    Simple Datatable
+                </h5>
+                <p class="card-subtitle">
+                    A table with realtime search, sort and pagination.
+                </p>
+            </div>
+            <div class="card-body">
+                <table class='table table-striped' id="table1">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>City</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Graiden</td>
+                            <td>vehicula.aliquet@semconsequat.co.uk</td>
+                            <td>076 4820 8838</td>
+                            <td>Offenburg</td>
+                            <td>
+                                <span class="badge bg-success">Active</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dale</td>
+                            <td>fringilla.euismod.enim@quam.ca</td>
+                            <td>0500 527693</td>
+                            <td>New Quay</td>
+                            <td>
+                                <span class="badge bg-success">Active</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nathaniel</td>
+                            <td>mi.Duis@diam.edu</td>
+                            <td>(012165) 76278</td>
+                            <td>Grumo Appula</td>
+                            <td>
+                                <span class="badge bg-danger">Inactive</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Darius</td>
+                            <td>velit@nec.com</td>
+                            <td>0309 690 7871</td>
+                            <td>Ways</td>
+                            <td>
+                                <span class="badge bg-success">Active</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Oleg</td>
+                            <td>rhoncus.id@Aliquamauctorvelit.net</td>
+                            <td>0500 441046</td>
+                            <td>Rossignol</td>
+                            <td>
+                                <span class="badge bg-success">Active</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kermit</td>
+                            <td>diam.Sed.diam@anteVivamusnon.org</td>
+                            <td>(01653) 27844</td>
+                            <td>Patna</td>
+                            <td>
+                                <span class="badge bg-success">Active</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jermaine</td>
+                            <td>sodales@nuncsit.org</td>
+                            <td>0800 528324</td>
+                            <td>Mold</td>
+                            <td>
+                                <span class="badge bg-success">Active</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ferdinand</td>
+                            <td>gravida.molestie@tinciduntadipiscing.org</td>
+                            <td>(016977) 4107</td>
+                            <td>Marlborough</td>
+                            <td>
+                                <span class="badge bg-danger">Inactive</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kuame</td>
+                            <td>Quisque.purus@mauris.org</td>
+                            <td>(0151) 561 8896</td>
+                            <td>Tresigallo</td>
+                            <td>
+                                <span class="badge bg-success">Active</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Deacon</td>
+                            <td>Duis.a.mi@sociisnatoquepenatibus.com</td>
+                            <td>07740 599321</td>
+                            <td>Karapınar</td>
+                            <td>
+                                <span class="badge bg-success">Active</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Channing</td>
+                            <td>tempor.bibendum.Donec@ornarelectusante.ca</td>
+                            <td>0845 46 49</td>
+                            <td>Warrnambool</td>
+                            <td>
+                                <span class="badge bg-success">Active</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Aladdin</td>
+                            <td>sem.ut@pellentesqueafacilisis.ca</td>
+                            <td>0800 1111</td>
+                            <td>Bothey</td>
+                            <td>
+                                <span class="badge bg-success">Active</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Cruz</td>
+                            <td>non@quisturpisvitae.ca</td>
+                            <td>07624 944915</td>
+                            <td>Shikarpur</td>
+                            <td>
+                                <span class="badge bg-success">Active</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Keegan</td>
+                            <td>molestie.dapibus@condimentumDonecat.edu</td>
+                            <td>0800 200103</td>
+                            <td>Assen</td>
+                            <td>
+                                <span class="badge bg-success">Active</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ray</td>
+                            <td>placerat.eget@sagittislobortis.edu</td>
+                            <td>(0112) 896 6829</td>
+                            <td>Hofors</td>
+                            <td>
+                                <span class="badge bg-success">Active</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Maxwell</td>
+                            <td>diam@dapibus.org</td>
+                            <td>0334 836 4028</td>
+                            <td>Thane</td>
+                            <td>
+                                <span class="badge bg-success">Active</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Carter</td>
+                            <td>urna.justo.faucibus@orci.com</td>
+                            <td>07079 826350</td>
+                            <td>Biez</td>
+                            <td>
+                                <span class="badge bg-success">Active</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Stone</td>
+                            <td>velit.Aliquam.nisl@sitametrisus.com</td>
+                            <td>0800 1111</td>
+                            <td>Olivar</td>
+                            <td>
+                                <span class="badge bg-success">Active</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Berk</td>
+                            <td>fringilla.porttitor.vulputate@taciti.edu</td>
+                            <td>(0101) 043 2822</td>
+                            <td>Sanquhar</td>
+                            <td>
+                                <span class="badge bg-success">Active</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Philip</td>
+                            <td>turpis@euenimEtiam.org</td>
+                            <td>0500 571108</td>
+                            <td>Okara</td>
+                            <td>
+                                <span class="badge bg-success">Active</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kibo</td>
+                            <td>feugiat@urnajustofaucibus.co.uk</td>
+                            <td>07624 682306</td>
+                            <td>La Cisterna</td>
+                            <td>
+                                <span class="badge bg-success">Active</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Bruno</td>
+                            <td>elit.Etiam.laoreet@luctuslobortisClass.edu</td>
+                            <td>07624 869434</td>
+                            <td>Rocca d'Arce</td>
+                            <td>
+                                <span class="badge bg-success">Active</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Leonard</td>
+                            <td>blandit.enim.consequat@mollislectuspede.net</td>
+                            <td>0800 1111</td>
+                            <td>Lobbes</td>
+                            <td>
+                                <span class="badge bg-success">Active</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Hamilton</td>
+                            <td>mauris@diam.org</td>
+                            <td>0800 256 8788</td>
+                            <td>Sanzeno</td>
+                            <td>
+                                <span class="badge bg-success">Active</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Harding</td>
+                            <td>Lorem.ipsum.dolor@etnetuset.com</td>
+                            <td>0800 1111</td>
+                            <td>Obaix</td>
+                            <td>
+                                <span class="badge bg-success">Active</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Emmanuel</td>
+                            <td>eget.lacus.Mauris@feugiatSednec.org</td>
+                            <td>(016977) 8208</td>
+                            <td>Saint-Remy-Geest</td>
+                            <td>
+                                <span class="badge bg-success">Active</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+      </div>
+    </div>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    
+<script src="assets/vendors/simple-datatables/simple-datatables.js"></script>
+<script>
+    // Simple Datatable
+    let table1 = document.querySelector('#table1');
+    let dataTable = new simpleDatatables.DataTable(table1);
+</script>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
+

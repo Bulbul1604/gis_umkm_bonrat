@@ -1,0 +1,75 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\KelompokUsaha;
+use App\Models\Kelurahan;
+use App\Models\UMKM;
+use App\Models\User;
+use Illuminate\Http\Request;
+
+class UMKMController extends Controller
+{
+    public function index()
+    {
+        $umkmall = UMKM::all();
+        return view('admin.umkm.index', compact('umkmall'));
+    }
+    public function create()
+    {
+        $users = User::where('level', '!=', 'admin')->get();
+        $kelurahan = Kelurahan::all();
+        $kelompok_usaha = KelompokUsaha::all();
+        return view('admin.umkm.create', compact('users', 'kelurahan', 'kelompok_usaha'));
+    }
+    public function store(Request $request)
+    {
+        $request->validate([
+            "user_id" => 'required',
+            "nama_usaha" => 'required',
+            "alamat" => 'required',
+            "kelurahan_id" => 'required',
+            "kelompok_usaha_id" => 'required',
+            "jenis_usaha" => 'required',
+            "location" => 'required',
+            "keterangan" => 'required',
+        ]);
+        UMKM::create($request->all());
+        return redirect()->route('admin.umkm.index')->with(['message' => 'Data umkm berhasil ditambahkan.']);
+    }
+    public function show($id)
+    {
+        $umkm = UMKM::findOrFail($id);
+        return view('admin.umkm.show', compact('umkm'));
+    }
+    public function edit($id)
+    {
+        $users = User::where('level', '!=', 'admin')->get();
+        $kelurahan = Kelurahan::all();
+        $kelompok_usaha = KelompokUsaha::all();
+        $umkm = UMKM::findOrFail($id);
+        return view('admin.umkm.edit', compact('users', 'kelurahan', 'kelompok_usaha', 'umkm'));
+    }
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+            "user_id" => 'required',
+            "nama_usaha" => 'required',
+            "alamat" => 'required',
+            "kelurahan_id" => 'required',
+            "kelompok_usaha_id" => 'required',
+            "jenis_usaha" => 'required',
+            "location" => 'required',
+            "keterangan" => 'required',
+        ]);
+        $umkm = UMKM::findOrFail($id);
+        $umkm->update($request->all());
+        return redirect()->route('admin.umkm.index')->with(['message' => 'Data umkm berhasil dirubah.']);
+    }
+    public function destroy($id)
+    {
+        $umkm = UMKM::findOrFail($id);
+        $umkm->delete();
+        return redirect()->route('admin.umkm.index')->with(['message' => 'Data umkm berhasil dihapus.']);
+    }
+}

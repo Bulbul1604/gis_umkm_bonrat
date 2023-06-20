@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sekul Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/vendors/bootstrap/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css"
+    />
+    
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <body class="light">
+    <div id="app">
+      <div id="sidebar-wrapper" class='sidebar'>
+    <div class="sidebar-header">
+        <div class="sidebar-logo text-center">Se<span class='text-blue-400'>kul</span></div>
+    </div>
+    <div class="sidebar-body">
+        <ul class="sidebar-menu">
+            
+            
+            <li class="sidebar-title">
+                <span>Main Menu</span>
+            </li>
+            
+            
+            
+                <li class="sidebar-item active ">
+                    <a href="index.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#house-door"/>
+                          </svg>
+                        <span>Dashboard</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#triangle"/>
+                          </svg>
+                        <span>Components</span>
+                    </a>
+                    
+                    <ul class="submenu ">
+                        
+                        <li class="submenu-item ">
+                            <a href="component-alert.html">Alert</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-badge.html">Badge</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-breadcrumb.html">Breadcrumb</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-buttons.html">Buttons</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-card.html">Card</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-carousel.html">Carousel</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-dropdowns.html">Dropdowns</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-list-group.html">List Group</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-modal.html">Modal</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-navs.html">Navs</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-pagination.html">Pagination</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-progress.html">Progress</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-spinners.html">Spinners</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-tooltips.html">Tooltips</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#briefcase"/>
+                          </svg>
+                        <span>Extra Components</span>
+                    </a>
+                    
+                    <ul class="submenu ">
+                        
+                        <li class="submenu-item ">
+                            <a href="component-extra-avatar.html">Avatar</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-extra-divider.html">Divider</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+            
+            <li class="sidebar-title">
+                <span>Apps</span>
+            </li>
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="apps-crud.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#card-heading"/>
+                          </svg>
+                        <span>CRUD Example</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="apps-chat.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#chat-dots-fill"/>
+                          </svg>
+                        <span>Chat App</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="apps-mail.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#envelope"/>
+                          </svg>
+                        <span>Email</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="apps-user-profile.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#person-badge"/>
+                          </svg>
+                        <span>User Profile</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#file-earmark-ruled"/>
+                          </svg>
+                        <span>Exam App</span>
+                    </a>
+                    
+                    <ul class="submenu ">
+                        
+                        <li class="submenu-item ">
+                            <a href="apps-exam-login.html">Student Login</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="apps-exam-working.html">Student Exam Working</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="apps-exam-admin-monitoring.html">Admin Monitoring</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+            
+            <li class="sidebar-title">
+                <span>Forms &amp; Tables</span>
+            </li>
+            
+            
+            
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#file-text"/>
+                          </svg>
+                        <span>Form Elements</span>
+                    </a>
+                    
+                    <ul class="submenu ">
+                        
+                        <li class="submenu-item ">
+                            <a href="form-element-input.html">Input</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="form-element-input-group.html">Input Group</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="form-element-select.html">Select</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="form-element-radio.html">Radio</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="form-element-checkbox.html">Checkbox</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="form-element-textarea.html">Textarea</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="form-layout.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#files"/>
+                          </svg>
+                        <span>Form Layout</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="form-editor.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#layers"/>
+                          </svg>
+                        <span>Form Editor</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="table.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#grid"/>
+                          </svg>
+                        <span>Table</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="table-datatable.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#file-plus"/>
+                          </svg>
+                        <span>Datatable</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+            <li class="sidebar-title">
+                <span>Extra UI</span>
+            </li>
+            
+            
+            
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#exclude"/>
+                          </svg>
+                        <span>Widgets</span>
+                    </a>
+                    
+                    <ul class="submenu ">
+                        
+                        <li class="submenu-item ">
+                            <a href="ui-chatbox.html">Chatbox</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="ui-pricing.html">Pricing</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="ui-todolist.html">To-do List</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill"/>
+                          </svg>
+                        <span>Charts</span>
+                    </a>
+                    
+                    <ul class="submenu ">
+                        
+                        <li class="submenu-item ">
+                            <a href="ui-chart-chartjs.html">ChartJS</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="ui-chart-apexchart.html">Apexchart</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="ui-google-maps.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#globe"/>
+                          </svg>
+                        <span>Google Maps</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+            <li class="sidebar-title">
+                <span>Pages</span>
+            </li>
+            
+            
+            
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#person"/>
+                          </svg>
+                        <span>Authentication</span>
+                    </a>
+                    
+                    <ul class="submenu ">
+                        
+                        <li class="submenu-item ">
+                            <a href="auth-login.html">Login</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="auth-register.html">Register</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="auth-forgot-password.html">Forgot Password</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#x"/>
+                          </svg>
+                        <span>Errors</span>
+                    </a>
+                    
+                    <ul class="submenu ">
+                        
+                        <li class="submenu-item ">
+                            <a href="error-403.html">403</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="error-404.html">404</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="error-500.html">500</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#eye-slash-fill"/>
+                          </svg>
+                        <span>Disabled Menu</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#menu-button"/>
+                          </svg>
+                        <span>Menu Levels</span>
+                    </a>
+                    
+                    <ul class="submenu ">
+                        
+                        <li class="submenu-item ">
+                            <a href="#">Second Level</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="#">Second Level</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+            <div class="px-4 mt-4 mb-5">
+                <a href="http://" class='btn btn-outline-primary btn-block'>
+                    <svg class="bi" width="20" height="20" fill="currentColor">
+                        <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#file-earmark-medical"/>
+                      </svg>
+                    Documentation
+                </a>
+            </div>
+        </ul>
+    </div>
+</div>
+      <div id="main">
+        
+
+<div class="page-title">
+    <h3>Dashboard</h3>
+    <nav class='breadcrumb-header' aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol>
+      </nav>
+</div>
+<div class="page-content">
+    <div class="row mt-3">
+        <div class="col-md-3 mt-3">
+            <div class="card card-shadow card-statistic">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <div class="left">
+                            <h5>Rata2 Nilai</h5>
+                            <h1>87,5</h1>
+                        </div>
+                        <div class="right d-flex align-items-center">
+                            <div class="avatar avatar-icon avatar-xl bg-rgba-primary ">
+                                <svg class="bi" width="30" height="30" fill="currentColor">
+                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#bar-chart-line"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mt-3">
+            <div class="card card-shadow card-statistic">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <div class="left">
+                            <h5>Tugas Selesai</h5>
+                            <h1>19</h1>
+                        </div>
+                        <div class="right d-flex align-items-center">
+                            <div class="avatar avatar-icon avatar-xl bg-rgba-success ">
+                                <svg class="bi" width="30" height="30" fill="currentColor">
+                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#file-earmark-check-fill"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mt-3">
+            <div class="card card-shadow card-statistic">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <div class="left">
+                            <h5>Tugas Menunggu</h5>
+                            <h1>5</h1>
+                        </div>
+                        <div class="right d-flex align-items-center">
+                            <div class="avatar avatar-icon avatar-xl bg-rgba-warning ">
+                                <svg class="bi" width="30" height="30" fill="currentColor">
+                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#file-earmark-text-fill"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mt-3">
+            <div class="card card-shadow card-statistic">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <div class="left">
+                            <h5>Tidak Hadir</h5>
+                            <h1>3</h1>
+                        </div>
+                        <div class="right d-flex align-items-center">
+                            <div class="avatar avatar-icon avatar-xl bg-rgba-danger ">
+                                <svg class="bi" width="30" height="30" fill="currentColor">
+                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#x"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-6 mt-3">
+            <div class="card card-shadow">
+                <div class="card-header">
+                    <h5 class="card-title">Nilai Rata-Rata</h5>
+                    <p class="card-subtitle">Berikut adalah nilai rata-rata dari mata pelajaran</p>
+                </div>
+                <div class="card-body">
+                    <div id="average-chart"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row mt-3">
+                <div class="col-md-6 mt-3">
+                    <div class="card card-shadow">
+                        <div class="card-header">
+                        </div>
+                        <div class="card-body text-center pb-5">
+                            
+                            <svg class="bi text-primary" width="45" height="45" fill="currentColor">
+                                <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#alarm"/>
+                            </svg>
+                            <h1 class='mt-4 mb-2'>3d 18h 54s</h1>
+                            <h6 class='pb-4'>Sampai ujian berikutnya</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <div class="card card-shadow">
+                        <div class="card-header">
+                            <h5 class="card-title ">Todo List</h5>
+                            <p class="card-subtitle ">Hal yang harus kamu kerjakan</p>
+                        </div>
+                        <div class="card-body p-0">
+                            <table class="table table-striped mb-0">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Tugas</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class='text-center'>
+                                            <svg class="bi text-muted" width="20" height="20" fill="currentColor">
+                                                <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#chevron-expand"/>
+                                            </svg>
+                                        </td>
+                                        <td>Tugas MTK</td>
+                                        <td>
+                                            <span class="avatar avatar-icon bg-rgba-success ">
+                                                <svg class="bi" width="16" height="16" fill="currentColor">
+                                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#check"/>
+                                                </svg>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class='text-center'>
+                                            <svg class="bi text-muted" width="20" height="20" fill="currentColor">
+                                                <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#chevron-expand"/>
+                                            </svg>
+                                        </td>
+                                        <td>Praktek Agama</td>
+                                        <td>
+                                            <span class="avatar avatar-icon bg-rgba-primary ">
+                                                <svg class="bi" width="16" height="16" fill="currentColor">
+                                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#bullseye"/>
+                                                </svg>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class='text-center'>
+                                            <svg class="bi text-muted" width="20" height="20" fill="currentColor">
+                                                <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#chevron-expand"/>
+                                            </svg>
+                                        </td>
+                                        <td>Kerjain B.Indo</td>
+                                        <td>
+                                            <span class="avatar avatar-icon bg-rgba-primary ">
+                                                <svg class="bi" width="16" height="16" fill="currentColor">
+                                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#bullseye"/>
+                                                </svg>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 mt-2">
+                    <div class="card card-shadow">
+                        <div class="card-header">
+                            <h5 class="card-title">Incoming Exam</h5>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table table-hover mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th class='text-center'>#</th>
+                                            <th>Nama</th>
+                                            <th>Materi</th>
+                                            <th>Sisa Waktu</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class='text-center'>1</td>
+                                            <td>Matematika</td>
+                                            <td>Aljabar</td>
+                                            <td class='text-danger'>
+                                                <svg class="bi text-danger mr-2" width="16" height="16" fill="currentColor">
+                                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#alarm"/>
+                                                </svg>
+                                                2jam 15menit
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class='text-center'>2</td>
+                                            <td>Bahasa Indonesia</td>
+                                            <td>Puisi</td>
+                                            <td >
+                                                <svg class="bi text-primary mr-2" width="16" height="16" fill="currentColor">
+                                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#alarm"/>
+                                                </svg>
+                                                1hari 8jam 10menit
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class='text-center'>3</td>
+                                            <td>Bahasa Inggris</td>
+                                            <td>Adjective</td>
+                                            <td >
+                                                <svg class="bi text-primary mr-2" width="16" height="16" fill="currentColor">
+                                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#alarm"/>
+                                                </svg>
+                                                3hari 2jam 5menit
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class='text-center'>3</td>
+                                            <td>Fisika</td>
+                                            <td>Hukum Newton</td>
+                                            <td >
+                                                <svg class="bi text-primary mr-2" width="16" height="16" fill="currentColor">
+                                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#alarm"/>
+                                                </svg>
+                                                5hari 2jam 15menit
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+      </div>
+    </div>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    
+
+<script src="assets/vendors/apexcharts/apexcharts.min.js"></script>
+<script src="assets/js/pages/dashboard.js"></script>
+
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
+

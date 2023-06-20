@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sekul Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/vendors/bootstrap/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css"
+    />
+    
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <body class="light">
+    <div id="app">
+      <div id="sidebar-wrapper" class='sidebar'>
+    <div class="sidebar-header">
+        <div class="sidebar-logo text-center">Se<span class='text-blue-400'>kul</span></div>
+    </div>
+    <div class="sidebar-body">
+        <ul class="sidebar-menu">
+            
+            
+            <li class="sidebar-title">
+                <span>Main Menu</span>
+            </li>
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="index.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#house-door"/>
+                          </svg>
+                        <span>Dashboard</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item active has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#triangle"/>
+                          </svg>
+                        <span>Components</span>
+                    </a>
+                    
+                    <ul class="submenu active">
+                        
+                        <li class="submenu-item ">
+                            <a href="component-alert.html">Alert</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-badge.html">Badge</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-breadcrumb.html">Breadcrumb</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-buttons.html">Buttons</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-card.html">Card</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-carousel.html">Carousel</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-dropdowns.html">Dropdowns</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-list-group.html">List Group</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-modal.html">Modal</a>
+                        </li>
+                        
+                        <li class="submenu-item active">
+                            <a href="component-navs.html">Navs</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-pagination.html">Pagination</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-progress.html">Progress</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-spinners.html">Spinners</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-tooltips.html">Tooltips</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#briefcase"/>
+                          </svg>
+                        <span>Extra Components</span>
+                    </a>
+                    
+                    <ul class="submenu ">
+                        
+                        <li class="submenu-item ">
+                            <a href="component-extra-avatar.html">Avatar</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-extra-divider.html">Divider</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+            
+            <li class="sidebar-title">
+                <span>Apps</span>
+            </li>
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="apps-crud.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#card-heading"/>
+                          </svg>
+                        <span>CRUD Example</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="apps-chat.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#chat-dots-fill"/>
+                          </svg>
+                        <span>Chat App</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="apps-mail.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#envelope"/>
+                          </svg>
+                        <span>Email</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="apps-user-profile.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#person-badge"/>
+                          </svg>
+                        <span>User Profile</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#file-earmark-ruled"/>
+                          </svg>
+                        <span>Exam App</span>
+                    </a>
+                    
+                    <ul class="submenu ">
+                        
+                        <li class="submenu-item ">
+                            <a href="apps-exam-login.html">Student Login</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="apps-exam-working.html">Student Exam Working</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="apps-exam-admin-monitoring.html">Admin Monitoring</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+            
+            <li class="sidebar-title">
+                <span>Forms &amp; Tables</span>
+            </li>
+            
+            
+            
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#file-text"/>
+                          </svg>
+                        <span>Form Elements</span>
+                    </a>
+                    
+                    <ul class="submenu ">
+                        
+                        <li class="submenu-item ">
+                            <a href="form-element-input.html">Input</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="form-element-input-group.html">Input Group</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="form-element-select.html">Select</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="form-element-radio.html">Radio</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="form-element-checkbox.html">Checkbox</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="form-element-textarea.html">Textarea</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="form-layout.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#files"/>
+                          </svg>
+                        <span>Form Layout</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="form-editor.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#layers"/>
+                          </svg>
+                        <span>Form Editor</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="table.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#grid"/>
+                          </svg>
+                        <span>Table</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="table-datatable.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#file-plus"/>
+                          </svg>
+                        <span>Datatable</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+            <li class="sidebar-title">
+                <span>Extra UI</span>
+            </li>
+            
+            
+            
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#exclude"/>
+                          </svg>
+                        <span>Widgets</span>
+                    </a>
+                    
+                    <ul class="submenu ">
+                        
+                        <li class="submenu-item ">
+                            <a href="ui-chatbox.html">Chatbox</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="ui-pricing.html">Pricing</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="ui-todolist.html">To-do List</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill"/>
+                          </svg>
+                        <span>Charts</span>
+                    </a>
+                    
+                    <ul class="submenu ">
+                        
+                        <li class="submenu-item ">
+                            <a href="ui-chart-chartjs.html">ChartJS</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="ui-chart-apexchart.html">Apexchart</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="ui-google-maps.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#globe"/>
+                          </svg>
+                        <span>Google Maps</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+            <li class="sidebar-title">
+                <span>Pages</span>
+            </li>
+            
+            
+            
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#person"/>
+                          </svg>
+                        <span>Authentication</span>
+                    </a>
+                    
+                    <ul class="submenu ">
+                        
+                        <li class="submenu-item ">
+                            <a href="auth-login.html">Login</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="auth-register.html">Register</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="auth-forgot-password.html">Forgot Password</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#x"/>
+                          </svg>
+                        <span>Errors</span>
+                    </a>
+                    
+                    <ul class="submenu ">
+                        
+                        <li class="submenu-item ">
+                            <a href="error-403.html">403</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="error-404.html">404</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="error-500.html">500</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#eye-slash-fill"/>
+                          </svg>
+                        <span>Disabled Menu</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#menu-button"/>
+                          </svg>
+                        <span>Menu Levels</span>
+                    </a>
+                    
+                    <ul class="submenu ">
+                        
+                        <li class="submenu-item ">
+                            <a href="#">Second Level</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="#">Second Level</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+            <div class="px-4 mt-4 mb-5">
+                <a href="http://" class='btn btn-outline-primary btn-block'>
+                    <svg class="bi" width="20" height="20" fill="currentColor">
+                        <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#file-earmark-medical"/>
+                      </svg>
+                    Documentation
+                </a>
+            </div>
+        </ul>
+    </div>
+</div>
+      <div id="main">
+        
+
+<div class="page-title">
+	<h3>Navs</h3>
+	<nav class="breadcrumb-header" aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Navs</li>
+		</ol>
+	</nav>
+</div>
+<div class="row mt-3">
+	<div class="col-12">
+		<div class="card card-shadow">
+			<div class="card-header">
+				<h5 class="card-title">Default</h5>
+			</div>
+			<div class="card-body">
+				<ul class="nav">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Active</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row mt-3">
+	<div class="col-12">
+		<div class="card card-shadow">
+			<div class="card-header">
+				<h5 class="card-title">Javascript Behavior</h5>
+			</div>
+			<div class="card-body">
+				<div class="row mt-3">
+					<div class="col-md-6">
+						<h5 class="card-title">Horizontal Navs</h5>
+						<ul class="nav nav-tabs" id="myTab" role="tablist">
+							<li class="nav-item" role="presentation">
+								<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+							</li>
+							<li class="nav-item" role="presentation">
+								<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+							</li>
+							<li class="nav-item" role="presentation">
+								<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+							</li>
+						</ul>
+						<div class="tab-content" id="myTabContent">
+							<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+								<p class="my-2">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut nulla neque. Ut hendrerit nulla a euismod pretium. Fusce venenatis sagittis ex efficitur suscipit. In tempor mattis
+									fringilla. Sed id tincidunt orci, et volutpat ligula. Aliquam sollicitudin sagittis ex, a rhoncus nisl feugiat quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+									ultricies ligula a tempor vulputate. Suspendisse pretium mollis ultrices.
+								</p>
+							</div>
+							<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+								Integer interdum diam eleifend metus lacinia, quis gravida eros mollis. Fusce non sapien sit amet magna dapibus ultrices. Morbi tincidunt magna ex, eget faucibus sapien bibendum non.
+								Duis a mauris ex. Ut finibus risus sed massa mattis porta. Aliquam sagittis massa et purus efficitur ultricies. Integer pretium dolor at sapien laoreet ultricies. Fusce congue et lorem
+								id convallis. Nulla volutpat tellus nec molestie finibus. In nec odio tincidunt eros finibus ullamcorper. Ut sodales, dui nec posuere finibus, nisl sem aliquam metus, eu accumsan lacus
+								felis at odio. Sed lacus quam, convallis quis condimentum ut, accumsan congue massa. Pellentesque et quam vel massa pretium ullamcorper vitae eu tortor.
+							</div>
+							<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+								<p class="mt-2">
+									Duis ultrices purus non eros fermentum hendrerit. Aenean ornare interdum viverra. Sed ut odio velit. Aenean eu diam dictum nibh rhoncus mattis quis ac risus. Vivamus eu congue ipsum.
+									Maecenas id sollicitudin ex. Cras in ex vestibulum, posuere orci at, sollicitudin purus. Morbi mollis elementum enim, in cursus sem placerat ut.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<h5 class="card-title">Vertical Navs</h5>
+						<div class="row mt-3">
+							<div class="col-3">
+								<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+									<a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+									<a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+									<a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+									<a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+								</div>
+							</div>
+							<div class="col-9">
+								<div class="tab-content" id="v-pills-tabContent">
+									<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut nulla neque. Ut hendrerit nulla a euismod pretium. Fusce venenatis sagittis ex efficitur suscipit. In tempor
+										mattis fringilla. Sed id tincidunt orci, et volutpat ligula. Aliquam sollicitudin sagittis ex, a rhoncus nisl feugiat quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Nunc ultricies ligula a tempor vulputate. Suspendisse pretium mollis ultrices
+									</div>
+									<div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+										Integer interdum diam eleifend metus lacinia, quis gravida eros mollis. Fusce non sapien sit amet magna dapibus ultrices. Morbi tincidunt magna ex, eget faucibus sapien bibendum
+										non. Duis a mauris ex. Ut finibus risus sed massa mattis porta. Aliquam sagittis massa et purus efficitur ultricies.
+									</div>
+									<div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+										Integer pretium dolor at sapien laoreet ultricies. Fusce congue et lorem id convallis. Nulla volutpat tellus nec molestie finibus. In nec odio tincidunt eros finibus ullamcorper.
+										Ut sodales, dui nec posuere finibus, nisl sem aliquam metus, eu accumsan lacus felis at odio.
+									</div>
+									<div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+										Sed lacus quam, convallis quis condimentum ut, accumsan congue massa. Pellentesque et quam vel massa pretium ullamcorper vitae eu tortor.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+      </div>
+    </div>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
+
